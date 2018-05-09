@@ -1,0 +1,11 @@
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.deps.json
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.runtimeconfig.json
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.runtimeconfig.dev.json
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.dll
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.pdb
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\obj\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.csprojAssemblyReference.cache
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\obj\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.csproj.CoreCompileInputs.cache
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\obj\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.AssemblyInfoInputs.cache
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\obj\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.AssemblyInfo.cs
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\obj\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.dll
+C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\obj\Debug\netcoreapp2.1\Contentful.ModelsCreator.Cli.pdb

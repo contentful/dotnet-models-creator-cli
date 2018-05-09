@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>contentful.modelscreator.cli</id>
+    <version>0.2.0</version>
+    <authors>Contentful</authors>
+    <owners>Contentful</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <copyright>Contentful GmbH.</copyright>
+    <tags>contentful CMS cli</tags>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="Microsoft.NETCore.Platforms" version="2.1.0-preview1-26216-02" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Contentful.ModelsCreator.Cli.deps.json" target="tools\netcoreapp2.1\any\Contentful.ModelsCreator.Cli.deps.json" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Contentful.ModelsCreator.Cli.runtimeconfig.json" target="tools\netcoreapp2.1\any\Contentful.ModelsCreator.Cli.runtimeconfig.json" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\obj\DotnetToolSettings.xml" target="tools\netcoreapp2.1\any\DotnetToolSettings.xml" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Contentful.ModelsCreator.Cli.dll" target="tools\netcoreapp2.1\any\Contentful.ModelsCreator.Cli.dll" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Contentful.ModelsCreator.Cli.pdb" target="tools\netcoreapp2.1\any\Contentful.ModelsCreator.Cli.pdb" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Contentful.Core.dll" target="tools\netcoreapp2.1\any\Contentful.Core.dll" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\McMaster.Extensions.CommandLineUtils.dll" target="tools\netcoreapp2.1\any\McMaster.Extensions.CommandLineUtils.dll" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll" target="tools\netcoreapp2.1\any\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Microsoft.Extensions.Options.dll" target="tools\netcoreapp2.1\any\Microsoft.Extensions.Options.dll" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Microsoft.Extensions.Primitives.dll" target="tools\netcoreapp2.1\any\Microsoft.Extensions.Primitives.dll" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\Newtonsoft.Json.dll" target="tools\netcoreapp2.1\any\Newtonsoft.Json.dll" />
+    <file src="C:\projects\Contentful.ModelsCreator.Cli\Contentful.ModelsCreator.Cli\bin\Release\netcoreapp2.1\publish\System.Runtime.CompilerServices.Unsafe.dll" target="tools\netcoreapp2.1\any\System.Runtime.CompilerServices.Unsafe.dll" />
+  </files>
+</package>
