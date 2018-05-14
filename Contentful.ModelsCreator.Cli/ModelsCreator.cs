@@ -1,4 +1,5 @@
 ﻿using Contentful.Core;
+using Contentful.Core.Configuration;
 using Contentful.Core.Errors;
 using Contentful.Core.Models;
 using Contentful.Core.Models.Management;
@@ -29,13 +30,16 @@ namespace Contentful.ModelsCreator.Cli
         [Option(CommandOptionType.SingleValue, Description = "The namespace the classes should be created in")]
         public string Namespace { get; set; } = "Replace.Me.NameSpace";
 
+        [Option(CommandOptionType.SingleValue, Description = "The environment to fetch the content model from")]
+        public string Environment { get; set; } = "master";
+
         [Option(CommandOptionType.NoValue, Description = "Automatically overwrite files that already exist")]
         public bool Force { get; }
 
         [Option(CommandOptionType.SingleValue, Description = "Path to the file or directory to create files in")]
         public string Path { get; }
 
-        [VersionOption("0.6.0")]
+        [VersionOption("0.7.0")]
         public bool Version { get; }
 
         private string _templateStart = @"using System;
@@ -52,8 +56,14 @@ using Contentful.Core.Models;
         {
 
             var http = new HttpClient();
-            var client = new ContentfulClient(http, ApiKey, "", SpaceId);
-
+            var options = new ContentfulOptions
+            {
+                DeliveryApiKey = ApiKey,
+                SpaceId = SpaceId,
+                Environment = Environment
+            };
+            var client = new ContentfulClient(http, options);
+            
             try
             {
                 _contentTypes = await client.GetContentTypes();
