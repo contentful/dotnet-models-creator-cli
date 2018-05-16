@@ -169,7 +169,7 @@ using Contentful.Core.Models;
 
         private string RemoveUnallowedCharacters(string s)
         {
-            return Regex.Replace(s, @"[^A-Za-z0-9\_]", "");
+            return Regex.Replace(s, @"[^A-Za-z0-9_]", "");
         }
 
         private string GetSafeFilename(string filename)
