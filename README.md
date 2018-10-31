@@ -1,4 +1,5 @@
 # dotnet-models-creator-cli
+<<<<<<< HEAD
 A dotnet CLI to automatically create strongly typed c-sharp models. This CLI tool is used internally by the Contentful Visual Studio plugin and the Contentful Visual Studio Code plugin.
 
 ## Prerequisites
@@ -25,3 +26,11 @@ Running `contentful.modelscreator.cli -s qz0n5cdakyl9 -a df2a18b8a5b4426741408fc
 If you want to specify the namespace of the created classes use the `-n` switch: `contentful.modelscreator.cli -s qz0n5cdakyl9 -a df2a18b8a5b4426741408fc95fa4331c7388d502318c44a5b22b167c3c1b1d03 -n MyProject.Models` 
 
 If you want to specify the path to create the assets in use the `-p` switch: `contentful.modelscreator.cli -s qz0n5cdakyl9 -a df2a18b8a5b4426741408fc95fa4331c7388d502318c44a5b22b167c3c1b1d03 -n MyProject.Models -p c:\temp`
+=======
+A dotnet CLI to automatically create strongly typed models. This tool requires .NET Core 2.1 or higher.
+
+## Usage
+Install the tool globally `dotnet tool install -g contentful.modelscreator.cli`.
+
+You should now be able to run `contentful.modelscreator.cli --help` to list all available commands.
+>>>>>>> e18ac492689c9999a4709f8209e9dc49592253aa
