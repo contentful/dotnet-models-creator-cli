@@ -39,7 +39,7 @@ namespace Contentful.ModelsCreator.Cli
         [Option(CommandOptionType.SingleValue, Description = "Path to the file or directory to create files in")]
         public string Path { get; }
 
-        [VersionOption("0.9.0")]
+        [VersionOption("0.9.1")]
         public bool Version { get; }
 
         private string _templateStart = @"using System;

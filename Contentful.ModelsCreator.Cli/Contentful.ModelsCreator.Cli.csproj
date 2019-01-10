@@ -6,20 +6,20 @@
     <PackAsTool>true</PackAsTool>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <LangVersion>Latest</LangVersion>
-    <Version>0.9.0</Version>
+    <Version>0.9.1</Version>
     <Company>Contentful GmbH</Company>
     <Authors>Contentful</Authors>
     <PackageId>contentful.modelscreator.cli</PackageId>
     <PackageTags>contentful;CMS;cli</PackageTags>
     <Copyright>Contentful GmbH.</Copyright>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <AssemblyVersion>0.9.0.0</AssemblyVersion>
-    <FileVersion>0.9.0.0</FileVersion>
+    <AssemblyVersion>0.9.1.0</AssemblyVersion>
+    <FileVersion>0.9.1.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="contentful.csharp" Version="2.1.2" />
-    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.2.1" />
+    <PackageReference Include="contentful.csharp" Version="3.6.1" />
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.3.0" />
   </ItemGroup>
 
 </Project>
