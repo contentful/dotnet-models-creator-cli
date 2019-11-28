@@ -63,12 +63,13 @@ using Contentful.Core.Models;
                 Environment = Environment
             };
             var client = new ContentfulClient(http, options);
-            
+
             try
             {
                 _contentTypes = await client.GetContentTypes();
             }
-            catch (ContentfulException ce) {
+            catch (ContentfulException ce)
+            {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Error.WriteLine("There was an error communicating with the Contentful API: " + ce.Message);
                 Console.Error.WriteLine($"Request ID: {ce.RequestId}");
@@ -93,7 +94,7 @@ using Contentful.Core.Models;
 
             var dir = new DirectoryInfo(path);
 
-            if(dir.Exists == false)
+            if (dir.Exists == false)
             {
                 Console.WriteLine($"Path {path} does not exist and will be created.");
                 dir.Create();
@@ -102,14 +103,14 @@ using Contentful.Core.Models;
             foreach (var contentType in _contentTypes)
             {
                 var safeFileName = GetSafeFilename(contentType.Name);
-                
+
                 var file = new FileInfo($"{dir.FullName}{System.IO.Path.DirectorySeparatorChar}{safeFileName}.cs");
                 if (file.Exists && !Force)
                 {
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     var prompt = Prompt.GetYesNo($"The folder already contains a file with the name {file.Name}. Do you want to overwrite it?", true);
                     Console.ResetColor();
-                    if(prompt == false)
+                    if (prompt == false)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine($"Skipping {file.Name}");
@@ -174,7 +175,8 @@ using Contentful.Core.Models;
 
         private string GetSafeFilename(string filename)
         {
-            return string.Join("-", filename.Split(System.IO.Path.GetInvalidFileNameChars()));
+            var withoutInvalidPathChars = string.Concat(filename.Split(System.IO.Path.GetInvalidFileNameChars()));
+            return RemoveUnallowedCharacters(FirstLetterToUpperCase(withoutInvalidPathChars));
         }
 
         private string GetDataTypeForField(Field field)
@@ -235,7 +237,7 @@ using Contentful.Core.Models;
         {
             var contentType = _contentTypes.FirstOrDefault(c => c.SystemProperties.Id == contentTypeId);
 
-            if(contentType == null)
+            if (contentType == null)
             {
                 return "object";
             }
@@ -247,11 +249,11 @@ using Contentful.Core.Models;
         {
             if (field.Items.LinkType == "Entry")
             {
-                if(field.Items.Validations != null && field.Items.Validations.Any(c => c is LinkContentTypeValidator))
+                if (field.Items.Validations != null && field.Items.Validations.Any(c => c is LinkContentTypeValidator))
                 {
                     var linkContentTypeValidator = field.Items.Validations.FirstOrDefault(c => c is LinkContentTypeValidator) as LinkContentTypeValidator;
 
-                    if(linkContentTypeValidator.ContentTypeIds.Count == 1)
+                    if (linkContentTypeValidator.ContentTypeIds.Count == 1)
                     {
                         return $"List<{GetDataTypeForContentTypeId(linkContentTypeValidator.ContentTypeIds[0])}>";
                     }
