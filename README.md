@@ -2,7 +2,7 @@
 A dotnet CLI to automatically create strongly typed c-sharp models. This CLI tool is used internally by the Contentful Visual Studio plugin and the Contentful Visual Studio Code plugin.
 
 ## Prerequisites
-The CLI tool uses the "global tools" feature of .NET Core 2.1 and requires the .NET Core 2.1 SDK to be installed. https://www.microsoft.com/net/download/dotnet-core/2.1
+The CLI tool uses the "[global tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)" feature of .NET Core 6.0 and requires the .NET Core 6.0 SDK to be installed. https://www.microsoft.com/net/download/dotnet-core/6.0
 
 ## Installation
 Run `dotnet tool install -g contentful.modelscreator.cli` from your command line.
